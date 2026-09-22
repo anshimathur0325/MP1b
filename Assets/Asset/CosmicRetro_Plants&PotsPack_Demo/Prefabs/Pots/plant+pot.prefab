@@ -54,7 +54,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: f16621fc41bc34b45bbb6a7e50a48a79, type: 2}
     - target: {fileID: 919132149155446097, guid: da4a693dffac8dc42a8d7353d9034176, type: 3}
       propertyPath: m_Name
-      value: CS_Plant_Pot_02 1
+      value: plant+pot
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71,7 +71,7 @@ PrefabInstance:
       addedObject: {fileID: 2193783481272842668}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da4a693dffac8dc42a8d7353d9034176, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2130177676127341614}
+      addedObject: {fileID: -4285926888069656628}
   m_SourcePrefab: {fileID: 100100000, guid: da4a693dffac8dc42a8d7353d9034176, type: 3}
 --- !u!1 &703125990236994623 stripped
 GameObject:
@@ -142,7 +142,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.51296246, y: 0.40122223, z: 0.51296246}
   m_Center: {x: -0.0000019073486, y: 0.20061117, z: -0.000000014901161}
---- !u!114 &2130177676127341614
+--- !u!114 &-4285926888069656628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,7 +151,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 703125990236994623}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff31079267a858e47b483ceaaf8dec85, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ac21d3e8ccbba347a90915ccc07c15d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::addplant
-  potSoil: {fileID: 8534345522801482815, guid: 12f70111141759e4a9b64489b04faa64, type: 3}
+  m_EditorClassIdentifier: Assembly-CSharp::addwater
+  potSoil: {fileID: 7519787643586528923, guid: 07e43cf7b2a8078448087aa11dcf4780, type: 3}
+  sc: {fileID: 0}

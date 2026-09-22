@@ -6,15 +6,17 @@ public class addplant : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        risefall r = FindAnyObjectByType<risefall>();
     }
     void OnTriggerEnter(Collider s){
         print("hi");
         if (s.CompareTag("seed")){
-            Instantiate(potSoil, transform.position, transform.rotation);
+            GameObject a = Instantiate(potSoil, transform.position, transform.rotation);
             
             Destroy(s.gameObject);
             Destroy(gameObject);
+            risefall r = FindAnyObjectByType<risefall>();
+            r.move(a);
         }
         
     }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - soil
   - seed
+  - water
   layers:
   - Default
   - TransparentFX
