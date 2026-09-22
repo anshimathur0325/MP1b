@@ -18,7 +18,7 @@ public class waterfilling : MonoBehaviour
         if (s.CompareTag("drop")){
             print("col");
             total+=1;
-            t.text = "Water Level: " + total + " (need 10)";
+            t.text = total + "/10";
              Destroy(s.gameObject);
         if (total == 10) {
             t.text = "Water Level = 10!!";

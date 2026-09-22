@@ -1,19 +1,20 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
-public class blacklight : MonoBehaviour
+public class releaseseed : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public GameObject box;
+    public GameObject s;
     public InputActionReference action;
     public TMP_Text t;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         action.action.Enable();
         action.action.performed += (ctx)=>
-        {        
-            Destroy(box);
-            t.text = "Clues Left:\nSoil: 0\nSeed: 1\nWater: 1";
+        {
+            
+            Instantiate(s,new Vector3(0f,7f,0f), transform.rotation);
+            t.text = "Clues Left:\nSoil: 0\nSeed: 0\nWater: 1";
         };
     }
 
@@ -21,6 +22,5 @@ public class blacklight : MonoBehaviour
     void Update()
     {
         
-    
     }
 }
